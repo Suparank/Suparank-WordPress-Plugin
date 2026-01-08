@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Development
+node_modules/
+.npm/
+
+# Build artifacts
+*.zip
+*.tar.gz
+
+# Local config
+.env
+config.local.php

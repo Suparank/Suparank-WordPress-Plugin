@@ -40,13 +40,15 @@ Connect your WordPress site to [Suparank](https://suparank.io) for AI-powered co
 
 ## Configuration
 
-1. Navigate to **Settings > Suparank Connector**
+1. Navigate to **Settings > Suparank** in your WordPress admin
 2. Copy the generated **Secret Key**
-3. Add to your Suparank MCP credentials:
+3. Configure Suparank MCP with the interactive wizard:
 
    ```bash
-   npx suparank credentials
+   npx suparank secrets
    ```
+
+   Select **WordPress Publishing** and enter your site URL and secret key.
 
    Or add manually to `~/.suparank/credentials.json`:
 
@@ -59,7 +61,7 @@ Connect your WordPress site to [Suparank](https://suparank.io) for AI-powered co
    }
    ```
 
-4. Test the connection using the **Test Connection** button
+4. Test the connection using the **Test Connection** button in WordPress or run `npx suparank test`
 
 ## API Endpoints
 
